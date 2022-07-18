@@ -3,29 +3,31 @@
   <head>
     <meta charset="utf-8">
     <title>WEB1 - CSS</title>
-    <style>
-      a {
-        color:blue;
-        text-decoration: none;
-      }
-    </style>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <h3>Pages</h3>
-    <ol>
-      <li><a href="index.html">MAIN</a></li>
-      <li><a href="1.html">HTML</a></li>
-      <li><a href="2.html" style="color:red; text-decoration:underline">CSS</a></li>
-      <li><a href="3.html">JavaScript</a></li>
-    </ol>
-    <h3>Contributor</h3>
-    <ol>
-      <li><a href="https://github.com/wjcldply" target="_blank" title="Github Page of Wonjin Kim">Wonjin Kim</a></li>
-    </ol>
-
     <h1>CSS</h1>
-    <p><a href="https://www.w3.org/TR/html5/" target="_blank" title="HTML5 Specification">Cascading Style Sheets (CSS)</a> is the standard markup language for <strong>creating <u>web</u> pages</strong> and web applications.Web browsers receive HTML documents from a web server or from local storage and render them into multimedia web pages. HTML describes the structure of a web page semantically and originally included cues for the appearance of the document.</p>
-    <img src="https://physicsworld.com/wp-content/uploads/2022/01/flight-routes-global-1227021821-iStock_DKosig.jpg">
-    <p style="margin-top:45px;">HTML elements are the building blocks of HTML pages. With HTML constructs, images and other objects, such as interactive forms, may be embedded into the rendered page. It provides a means to create structured documents by denoting structural semantics for text such as headings, paragraphs, lists, links, quotes and other items. HTML elements are delineated by tags, written using angle brackets. </p>
+    <div id='grid'>
+      <div id='menu'>
+        <h3>Pages</h3>
+        <ol>
+          <li><a href="index.html" class="pages">MAIN</a></li>
+          <li><a href="1.html" class="pages">HTML</a></li>
+          <li><a href="2.html" class="pages" id="active">CSS</a></li>
+          <li><a href="3.html" class="pages">JavaScript</a></li>
+        </ol>
+        <h3>Contributor</h3>
+        <ol>
+          <li><a href="https://github.com/wjcldply" class="pages" target="_blank" title="Github Page of Wonjin Kim">Wonjin Kim</a></li>
+        </ol>
+      </div>
+      <div id='article'>
+        <p><a href="https://www.w3.org/TR/html5/" target="_blank" title="HTML5 Specification"><strong>Cascading Style Sheets (CSS)</strong></a> is a style sheet language used for <strong>describing the presentation of a document</strong> written in a markup language such as HTML or XML (including XML dialects such as SVG, MathML or XHTML). CSS is a cornerstone technology of the World Wide Web, alongside HTML and JavaScript.</p>
+        <div class="animation-image">
+          <img src="https://www.programonaut.com/wp-content/uploads/2021/09/css-class-1024x312.png">
+        </div>
+        <p>CSS is designed to enable the separation of presentation and content, including layout, colors, and fonts. This separation can improve content accessibility; provide more flexibility and control in the specification of presentation characteristics; enable multiple web pages to share formatting by specifying the relevant CSS in a separate .css file, which reduces complexity and repetition in the structural content; and enable the .css file to be cached to improve the page load speed between the pages that share the file and its formatting.</p>
+      </div>
+    </div>
   </body>
 </html>
